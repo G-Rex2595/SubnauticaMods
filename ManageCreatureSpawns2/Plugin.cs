@@ -8,11 +8,13 @@ using System.Reflection;
 using System.IO;
 using System.Xml.Serialization;
 using System.Xml;
+using UnityEngine;
 
 namespace ManageCreatureSpawns2
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     [BepInProcess("Subnautica.exe")]
+    [BepInProcess("SubnauticaZero.exe")]
     public class Plugin : BaseUnityPlugin
     {
 
@@ -59,6 +61,7 @@ namespace ManageCreatureSpawns2
                         );
                     Logger.LogInfo(string.Format("Patched Creature.{0}", fn));
                 });
+
                 Logger.LogInfo("Setup Complete");
             }
             else

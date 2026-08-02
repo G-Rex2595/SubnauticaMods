@@ -43,5 +43,7 @@ belowZeroCreatures = [
     'SquidShark_LilyPads',
     'Symbiote',
     'TitanHoleFish',
-    'Triops'
+    'Triops',
+    'TrivalveBlue',
+    'TrivalveYellow'
 ]
